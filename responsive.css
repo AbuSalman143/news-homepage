@@ -1,0 +1,298 @@
+@media screen and (max-width:1200px){
+    nav{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    /* .containar{
+        border: 2px solid red;
+        padding: 10px;
+        width: 80%;
+    } */
+ 
+    header{
+        align-items: center;
+        padding: 25px 5px;
+    }
+    nav{
+        width: 70%;
+    }
+
+    .main-container{
+   
+         width: 98%;
+         padding: 10px 0px;
+         justify-content: center;
+         /* align-items: center; */
+                    
+    
+    }
+    #banner-image {
+        height: 200px;
+    }
+    #banner-image img {
+        height: 100%;
+    }
+    #new-section .new-arctical{
+        border: none;
+        height: 100px;
+    }
+    #new-section .new-arctical h3{
+        margin-bottom: 5px;
+        font-size: 14px;
+    }
+    #new-section .new-arctical p{
+        font-size: 10px;
+        color: var(--Grayish-blue);
+    }
+    #heading {
+        font-size: 16px;
+        padding: 0px 0px;
+        
+    
+    }
+    #discription{
+        font-size: 10px;
+       
+    }
+    #discription button{
+    width: 120px;
+    padding: 5px;
+    font-size: 12px;
+    
+    }
+
+    .arcticals{
+        
+        align-items: center;
+    }
+        .arcticals .img{
+            width: 30%;
+            height: 70px;
+        }
+    
+    
+    .artical{
+        /* border: 2px solid tomato; */
+        width: 80%;
+       
+    }
+    .artical h2{
+        font-size: 20px;
+       
+    }
+    .artical h3{
+        font-size: 12px;
+    }
+    .artical p{
+        font-size: 12px;
+      
+    }
+    footer{
+        position:fixed;
+        bottom: 0;
+    
+    }
+}
+
+@media screen and (max-width:750px) {
+    nav{
+        display: none;
+    }
+    .nav{
+       
+        position: fixed;
+        background-color: white;
+        top: 0;
+        right: 0;
+        left: 60%;
+        bottom: 0;
+        /* display: none; */
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+     .nav ul{
+      
+        padding: 1px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: start;
+        height: 40%;
+     }
+
+     #closed{
+        
+        display: block;
+        position: fixed;
+        top:5%;
+        right: 1%;
+        cursor: pointer;
+     }
+
+     
+    #menu{
+        display: block;
+    }
+
+    .main-container{
+   
+       
+        gap: 20px;
+        grid-template-areas: "img"
+                            "heading"
+                             "discription"
+                             "new"
+                             "arctical1"
+                             "arctical2"
+                             "arctical3";
+                    
+    
+    }#banner-image,
+    #new-section,
+    #heading,
+    #discription,
+    #arctical-scetion1,
+    #arctical-scetion2,
+    #arctical-scetion3 {
+      width: 100%;
+    }
+
+
+
+    #new-section{
+        /* border: 2px solid red; */
+        padding: 10px 0px;
+        display: flex;
+    }
+    #new-section h1{
+        padding: 0 20px;
+    }
+    #new-section .new-arctical{
+        border-bottom: 1px solid var(--Grayish-blue);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 20px;
+    }
+    #new-section .new-arctical h3{
+       
+        font-size: 20px;
+    }
+    #new-section .new-arctical p{
+        font-size: 16px;
+        color: var(--Grayish-blue);
+    }
+    #heading {
+        font-size: 24px;
+        padding: 0px 0px;
+        
+    
+    }
+    
+    #discription{
+       
+       height: 200px;
+        font-size: 18px;
+        
+    }
+    #discription button{
+        width: 200px;
+        padding: 10px;
+        font-size: 16px;
+    }
+    .arcticals{
+        
+         display: flex;
+         justify-content: space-evenly;
+     }
+     .arcticals .img{
+        width: 40%;
+        
+    }
+    .arcticals .img{
+        width: 30%;
+        height: 100px;
+    }
+    .artical{
+        height: 100%;
+       
+    }
+    .artical h2{
+        font-size: 30px;
+        
+    }
+    .artical h3{
+        
+        font-size: 16px;
+    }
+    
+    .artical p{
+        font-size: 16px;
+      
+    }
+
+    
+    footer{
+        position:static;
+        /* bottom: 0; */
+    
+    }
+        
+
+}
+
+@media screen and (max-width:400px) {
+    .containar{
+        
+        width: 98%;
+    }
+    header{
+         
+        padding: 15px 10px;
+    }
+   
+    nav ul{
+        padding: 0px 20px;
+    }
+
+    #img-desktop{
+        display: none;
+    }
+    #img-mobile{
+        display: block;
+    }
+    #heading {
+        font-size: 18px;
+        
+    
+    }
+    #discription{
+   
+        font-size: 15px;
+        
+    }
+
+    #new-section{
+        height: 600px;
+        
+    }
+    
+    /* #new-section h1{
+        color: var(--Soft-orange);
+    } */
+    
+    #new-section .new-arctical{
+       
+        height: 150px;
+    }
+    
+    
+    
+}
