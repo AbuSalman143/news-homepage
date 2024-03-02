@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+*{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+--Soft-orange: hsl(35, 77%, 62%);
+--Soft-red: hsl(5, 85%, 63%);
+--Off-white: hsl(36, 100%, 99%);
+--Grayish-blue: hsl(233, 8%, 79%);
+--Dark-grayish-blue: hsl(236, 13%, 42%);
+--Very-dark-blue: hsl(240, 100%, 5%);
+}
+
+
+body{
+    background: var(--Off-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.containar{
+    /* border: 2px solid red; */
+    padding: 10px;
+    width: 80%;
+}
+
+/* heade section */
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+}
+nav{
+    width: 40%;
+    
+}
+
+#closed{
+    display: none;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    /* border: 2px solid green; */
+    list-style: none;
+    color: var(--Dark-grayish-blue);
+}
+
+nav ul li:hover{
+    color: var(--Soft-orange);
+    cursor: pointer;
+}
+
+#menu{
+    cursor: pointer;
+    display: none;
+}
+
+
+/* css for grid  */
+
+
+.main-container{
+   
+    display: grid;
+    gap: 20px;
+    grid-template-areas: "img img new"
+                         "heading discription new"   
+                         "arctical1 arctical2 arctical3";
+     width: 90%;
+     padding: 40px;
+     justify-content: center;
+     /* align-items: center; */
+                
+
+}
+
+#banner-image{
+    grid-area: img;
+    
+}
+
+#new-section{
+    grid-area: new;
+}
+
+#heading{
+    grid-area: heading;
+}
+
+#discription{
+    grid-area:discription ;
+}
+
+#arctical-scetion1{
+    grid-area: arctical1;
+}
+#arctical-scetion2{
+    grid-area: arctical2;
+}
+#arctical-scetion3{
+    grid-area: arctical3;
+}
+
+
+/* css for style  */
+
+
+#img-mobile{
+    display: none;
+}
+#banner-image img{
+    width: 100%;
+}
+
+#new-section{
+   
+    background: var(--Very-dark-blue);
+    color: var(--Off-white);
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#new-section h1{
+    color: var(--Soft-orange);
+}
+
+#new-section .new-arctical{
+    border-bottom: 1px solid var(--Grayish-blue);
+    height: 100px;
+}
+
+
+#new-section .new-arctical h3{
+    margin-bottom: 10px;
+}
+#new-section .new-arctical h3:hover{
+    color: var(--Soft-orange);
+    cursor: pointer;
+}
+
+#new-section .new-arctical p{
+    font-size: 15px;
+    color: var(--Grayish-blue);
+}
+
+
+
+#heading {
+    font-size: 28px;
+    padding: 0px 20px;
+    font-weight: 800;
+
+}
+
+#discription{
+   
+    font-size: 15px;
+    color: var(--Dark-grayish-blue);
+    font-weight: 400;
+    line-height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#discription button{
+    width: 200px;
+    padding: 10px;
+    background: var(--Soft-red);
+    color:var(--Off-white);
+    letter-spacing: 2px;
+    font-size: 16px;
+    border: 2px solid var(--Soft-red) ;
+}
+
+#discription button:hover{
+    background: var(--Very-dark-blue);
+    border: 2px solid var(--Very-dark-blue) ;
+    cursor: pointer;
+}
+
+
+.arcticals{
+   /* border: 2px solid greenyellow; */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.arcticals .img{
+    width: 30%;
+    height: 100px;
+}
+
+.arcticals .img img{
+    height: 100%;
+}
+
+/*  */
+
+.artical{
+    /* border: 2px solid tomato; */
+    /* width: 50%; */
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.artical h2{
+    font-size: 30px;
+    font-weight: 800;
+    color: var(--Grayish-blue);
+}
+.artical h3:hover{
+    color: var(--Soft-red);
+    cursor: pointer;
+}
+
+.artical p{
+    font-size: 15px;
+    color: var(--Dark-grayish-blue);
+}
+
+footer{
+   
+    background: var(--Very-dark-blue);
+    width: 100%;
+    padding: 15px 0 ;
+}
+.attribution{
+   color: var(--Off-white);
+   text-align: center;
+   font-size: 18px;
+}
+.attribution a{
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--Soft-orange);
+}
+
